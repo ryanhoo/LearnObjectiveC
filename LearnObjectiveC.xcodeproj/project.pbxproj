@@ -11,6 +11,7 @@
 		947BC72419A748B600A0D38B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 947BC72319A748B600A0D38B /* main.m */; };
 		947BC72819A748B600A0D38B /* LearnObjectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 947BC72719A748B600A0D38B /* LearnObjectiveC.1 */; };
 		947BC73019A7490300A0D38B /* HDPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 947BC72F19A7490300A0D38B /* HDPerson.m */; };
+		947BC73319A9E8BD00A0D38B /* HDProgrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = 947BC73219A9E8BD00A0D38B /* HDProgrammer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		947BC72719A748B600A0D38B /* LearnObjectiveC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LearnObjectiveC.1; sourceTree = "<group>"; };
 		947BC72E19A7490300A0D38B /* HDPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDPerson.h; sourceTree = "<group>"; };
 		947BC72F19A7490300A0D38B /* HDPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPerson.m; sourceTree = "<group>"; };
+		947BC73119A9E8BD00A0D38B /* HDProgrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDProgrammer.h; sourceTree = "<group>"; };
+		947BC73219A9E8BD00A0D38B /* HDProgrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDProgrammer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,8 @@
 		947BC71419A748B600A0D38B = {
 			isa = PBXGroup;
 			children = (
+				947BC73119A9E8BD00A0D38B /* HDProgrammer.h */,
+				947BC73219A9E8BD00A0D38B /* HDProgrammer.m */,
 				947BC72E19A7490300A0D38B /* HDPerson.h */,
 				947BC72F19A7490300A0D38B /* HDPerson.m */,
 				947BC72219A748B600A0D38B /* LearnObjectiveC */,
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947BC73319A9E8BD00A0D38B /* HDProgrammer.m in Sources */,
 				947BC73019A7490300A0D38B /* HDPerson.m in Sources */,
 				947BC72419A748B600A0D38B /* main.m in Sources */,
 			);

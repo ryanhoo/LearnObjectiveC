@@ -17,6 +17,12 @@
 
 - (void)sayHello;
 
+- (void)sendMessageToSomeone: (NSString *)name;
+
+- (void)logMessage: (NSString*)message;
+
+- (NSString *)getFullName;
+
 + (void)person;
 
 @end
