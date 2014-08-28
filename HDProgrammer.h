@@ -12,4 +12,8 @@
 
 - (void)program;
 
+- (id)init;
+
+- (id)initWithID:(int)id;
+
 @end

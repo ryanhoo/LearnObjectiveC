@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HDPerson : NSObject
+@interface HDPerson : NSObject <NSCopying>
 
-@property NSString *firstName;
+@property (copy) NSString *firstName;
 @property NSString *lastName;
 @property NSDate *yearOfBirth;
 @property int age;
+@property (getter = isMale) BOOL male;
+
+- (id)initWithFirstName: (NSString *)firstName lastName:(NSString *)lastName;
+
++ (id)initWithFirstName: (NSString *)firstName lastName:(NSString *)lastName yearOfBirth: (NSDate *)yearOfBirth;
 
 - (void)sayHello;
 

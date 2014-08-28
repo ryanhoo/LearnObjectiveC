@@ -10,6 +10,23 @@
 
 @implementation HDProgrammer
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
+
+- (id)initWithID:(int)id
+{
+    self = [super init];
+    if (self) {
+
+    }
+    return self;
+}
+
 - (void)program {
     [self logMessage:[NSString stringWithFormat:@"%@ is a programmer and is programing!", self.firstName]];
 }

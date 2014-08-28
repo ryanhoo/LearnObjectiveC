@@ -12,6 +12,7 @@
 		947BC72819A748B600A0D38B /* LearnObjectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 947BC72719A748B600A0D38B /* LearnObjectiveC.1 */; };
 		947BC73019A7490300A0D38B /* HDPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 947BC72F19A7490300A0D38B /* HDPerson.m */; };
 		947BC73319A9E8BD00A0D38B /* HDProgrammer.m in Sources */ = {isa = PBXBuildFile; fileRef = 947BC73219A9E8BD00A0D38B /* HDProgrammer.m */; };
+		94AC47DF19AC941700CA6007 /* NSObject+HDPerson_Ryan.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AC47DE19AC941700CA6007 /* NSObject+HDPerson_Ryan.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		947BC72F19A7490300A0D38B /* HDPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDPerson.m; sourceTree = "<group>"; };
 		947BC73119A9E8BD00A0D38B /* HDProgrammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDProgrammer.h; sourceTree = "<group>"; };
 		947BC73219A9E8BD00A0D38B /* HDProgrammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDProgrammer.m; sourceTree = "<group>"; };
+		94AC47DD19AC941700CA6007 /* NSObject+HDPerson_Ryan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HDPerson_Ryan.h"; sourceTree = "<group>"; };
+		94AC47DE19AC941700CA6007 /* NSObject+HDPerson_Ryan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HDPerson_Ryan.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 		947BC71419A748B600A0D38B = {
 			isa = PBXGroup;
 			children = (
+				94AC47DD19AC941700CA6007 /* NSObject+HDPerson_Ryan.h */,
+				94AC47DE19AC941700CA6007 /* NSObject+HDPerson_Ryan.m */,
 				947BC73119A9E8BD00A0D38B /* HDProgrammer.h */,
 				947BC73219A9E8BD00A0D38B /* HDProgrammer.m */,
 				947BC72E19A7490300A0D38B /* HDPerson.h */,
@@ -151,6 +156,7 @@
 			files = (
 				947BC73319A9E8BD00A0D38B /* HDProgrammer.m in Sources */,
 				947BC73019A7490300A0D38B /* HDPerson.m in Sources */,
+				94AC47DF19AC941700CA6007 /* NSObject+HDPerson_Ryan.m in Sources */,
 				947BC72419A748B600A0D38B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +271,7 @@
 				947BC72D19A748B600A0D38B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

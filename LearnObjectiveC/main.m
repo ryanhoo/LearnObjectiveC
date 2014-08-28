@@ -16,12 +16,14 @@ void testClasses() {
     [person sendMessageToSomeone:@"how are you?"];
     NSLog(@"person is %@", person);
     
-    person.firstName = @"ryan";
-    person.lastName = @"hoo";
+//    person.firstName = @"ryan";
+    [person setFirstName: @"ryan"];
+//    person.lastName = @"hoo";
+    [person setLastName: @"hoo"];
+
     NSLog(@"person's full name is %@", [person getFullName]);
     
     NSLog(@"person's name in uppercase is %@", [person.firstName uppercaseString]);
-    
     
     HDProgrammer *programmer = [HDProgrammer new];
     programmer.firstName = @"ryan";
@@ -30,6 +32,8 @@ void testClasses() {
     // factory method doesn't need to init
     [HDProgrammer person];
     
+    HDPerson *p = [[HDPerson alloc] initWithFirstName: @"Bruce" lastName: @"Lee"];
+    NSLog(@"init with first name and last name : %@", [p getFullName]);
 }
 
 void testLiterals() {
@@ -64,6 +68,27 @@ void testNil() {
     }
 }
 
+void testWeakReference() {
+    HDPerson * __weak person = [HDPerson new];
+    // assert the weak local variable is null now
+    NSLog(@"the weak person now is %@", person);
+}
+
+void testCopy() {
+    // if the person's firstName is conformed to the NSCopying protocol, the value would be ryan
+    // if not, the value would be changed into ryan hoo by appending the ' hoo' to the original name string
+    NSMutableString *nameString = [NSMutableString stringWithString: @"ryan"];
+    HDPerson *person = [HDPerson new];
+    person.firstName = nameString;
+    [nameString appendString: @" hoo"];
+    NSLog(@"the person's first name has been changed into %@", person.firstName);
+}
+
+void testFactoryInitMethod() {
+    HDPerson *person = [HDPerson initWithFirstName: @"ryan" lastName: @"hoo" yearOfBirth: [NSDate new]];
+    NSLog(@"%@", person);
+}
+
 int main(int argc, const char * argv[])
 {
 
@@ -71,7 +96,11 @@ int main(int argc, const char * argv[])
 //        testClasses();
 //        testLiterals();
 //        testEquality();
-        testNil();
+//        testNil();
+//        testWeakReference();
+//        testCopy();
+        testFactoryInitMethod();
     }
+    
     return 0;
 }
