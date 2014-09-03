@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "HDPerson.h"
 #import "HDProgrammer.h"
+#import "NSString+NSString_ConvertWhiteSpace.h"
 
 void testClasses() {
     HDPerson *person = [[HDPerson alloc] init];
@@ -89,6 +90,11 @@ void testFactoryInitMethod() {
     NSLog(@"%@", person);
 }
 
+void testCategory() {
+    NSString *sentence = @"hello this is a sentence";
+    NSLog(@"after convertion: %@", [sentence convertWhiteSpace]);
+}
+
 int main(int argc, const char * argv[])
 {
 
@@ -99,7 +105,8 @@ int main(int argc, const char * argv[])
 //        testNil();
 //        testWeakReference();
 //        testCopy();
-        testFactoryInitMethod();
+//        testFactoryInitMethod();
+        testCategory();
     }
     
     return 0;

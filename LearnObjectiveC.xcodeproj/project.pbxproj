@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		947A2FFB19B6BCDA00AF6064 /* NSString+NSString_ConvertWhiteSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 947A2FFA19B6BCDA00AF6064 /* NSString+NSString_ConvertWhiteSpace.m */; };
 		947BC72119A748B600A0D38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947BC72019A748B600A0D38B /* Foundation.framework */; };
 		947BC72419A748B600A0D38B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 947BC72319A748B600A0D38B /* main.m */; };
 		947BC72819A748B600A0D38B /* LearnObjectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 947BC72719A748B600A0D38B /* LearnObjectiveC.1 */; };
@@ -29,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		947A2FF919B6BCDA00AF6064 /* NSString+NSString_ConvertWhiteSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSString_ConvertWhiteSpace.h"; sourceTree = "<group>"; };
+		947A2FFA19B6BCDA00AF6064 /* NSString+NSString_ConvertWhiteSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_ConvertWhiteSpace.m"; sourceTree = "<group>"; };
 		947BC71D19A748B600A0D38B /* LearnObjectiveC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnObjectiveC; sourceTree = BUILT_PRODUCTS_DIR; };
 		947BC72019A748B600A0D38B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		947BC72319A748B600A0D38B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				94AC47DD19AC941700CA6007 /* NSObject+HDPerson_Ryan.h */,
+				947A2FF919B6BCDA00AF6064 /* NSString+NSString_ConvertWhiteSpace.h */,
+				947A2FFA19B6BCDA00AF6064 /* NSString+NSString_ConvertWhiteSpace.m */,
 				94AC47DE19AC941700CA6007 /* NSObject+HDPerson_Ryan.m */,
 				947BC73119A9E8BD00A0D38B /* HDProgrammer.h */,
 				947BC73219A9E8BD00A0D38B /* HDProgrammer.m */,
@@ -157,6 +162,7 @@
 				947BC73319A9E8BD00A0D38B /* HDProgrammer.m in Sources */,
 				947BC73019A7490300A0D38B /* HDPerson.m in Sources */,
 				94AC47DF19AC941700CA6007 /* NSObject+HDPerson_Ryan.m in Sources */,
+				947A2FFB19B6BCDA00AF6064 /* NSString+NSString_ConvertWhiteSpace.m in Sources */,
 				947BC72419A748B600A0D38B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
