@@ -16,6 +16,8 @@
 @property int age;
 @property (getter = isMale) BOOL male;
 
+@property (readonly) NSString *uniqueIdentifier;
+
 - (id)initWithFirstName: (NSString *)firstName lastName:(NSString *)lastName;
 
 + (id)initWithFirstName: (NSString *)firstName lastName:(NSString *)lastName yearOfBirth: (NSDate *)yearOfBirth;
@@ -27,6 +29,8 @@
 - (void)logMessage: (NSString*)message;
 
 - (NSString *)getFullName;
+
+- (NSString *)requestUniqueueIdentifier;
 
 + (void)person;
 

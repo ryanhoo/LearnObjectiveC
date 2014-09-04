@@ -95,6 +95,13 @@ void testCategory() {
     NSLog(@"after convertion: %@", [sentence convertWhiteSpace]);
 }
 
+void testClassExtension() {
+    HDPerson *person = [HDPerson initWithFirstName: @"ryan" lastName: @"hoo" yearOfBirth: [NSDate new]];
+    [person requestUniqueueIdentifier];
+    NSString *uniqueIdentifier = person.uniqueIdentifier;
+    NSLog(@"the %@ 's unique identifier is %@", person, uniqueIdentifier);
+}
+
 int main(int argc, const char * argv[])
 {
 
@@ -106,7 +113,8 @@ int main(int argc, const char * argv[])
 //        testWeakReference();
 //        testCopy();
 //        testFactoryInitMethod();
-        testCategory();
+//        testCategory();
+        testClassExtension();
     }
     
     return 0;

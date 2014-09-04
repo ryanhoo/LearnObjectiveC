@@ -7,6 +7,7 @@
 //
 
 #import "HDPerson.h"
+#import "HDPerson_Private.h"
 
 @implementation HDPerson {
     NSString *_hello;
@@ -51,6 +52,19 @@
 
 + (void)person {
     NSLog(@"I am a person");
+}
+
+- (NSString *)requestUniqueueIdentifier {
+    if (self.uniqueIdentifier)
+        return self.uniqueIdentifier;
+    NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    int length = 16;
+    NSMutableString *randomString = [NSMutableString stringWithCapacity: length];
+    for (int i = 0; i < length; i++) {
+        [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random() % letters.length]];
+    }
+    self.uniqueIdentifier = randomString;
+    return self.uniqueIdentifier;
 }
 
 - (id) copyWithZone:(NSZone *)zone {
