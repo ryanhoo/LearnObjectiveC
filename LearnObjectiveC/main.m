@@ -92,6 +92,7 @@ void testFactoryInitMethod() {
 
 void testCategory() {
     NSString *sentence = @"hello this is a sentence";
+    
     NSLog(@"after convertion: %@", [sentence convertWhiteSpace]);
 }
 
@@ -102,6 +103,22 @@ void testClassExtension() {
     NSLog(@"the %@ 's unique identifier is %@", person, uniqueIdentifier);
 }
 
+void (^anonymousFunction)(void)  = ^{
+    NSLog(@"hello this is an anonymous function");
+};
+
+
+void testBlock() {
+
+    __block NSInteger age = 12;
+    void (^simpleBlock)(void) = ^{
+        age += 1;
+        NSLog(@"this is a simple block! the age is %ld", (long)age);
+    };
+
+    simpleBlock();
+    NSLog(@"this is a simple block! the age is %ld", (long)age);    
+}
 int main(int argc, const char * argv[])
 {
 
@@ -114,7 +131,9 @@ int main(int argc, const char * argv[])
 //        testCopy();
 //        testFactoryInitMethod();
 //        testCategory();
-        testClassExtension();
+//        testClassExtension();
+//        anonymousFunction();
+        testBlock();
     }
     
     return 0;
